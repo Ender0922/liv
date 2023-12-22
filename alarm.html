@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>드론 호출</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/alarm.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="headbar">
+        <div style="width: 1.5rem;"></div>
+        <div style="width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <a href="call.html">
+                <div class="headbarbutton" style="border: var(--gray) 1px solid;">
+                    <p class="text unchosed">메인</p>
+                </div>
+            </a>
+            <div style="width : calc((100% - 6rem * 3) / 2);"></div>
+            <a href="alarm.html">
+                <div class="headbarbutton" style="border: var(--red) 1px solid;">
+                    <p class="text chosed">약 알림</p>
+                </div>
+            </a>
+            <div style="width : calc((100% - 6rem * 3) / 2);"></div>
+            <a href="docor.html">
+                <div class="headbarbutton" style="border: var(--gray) 1px solid;">
+                    <p class="text unchosed">의사소견</p>
+                </div>
+            </a>
+        </div>
+        <div style="width: 1.5rem;"></div>
+    </div>
+
+    <div style="height: 3rem;"></div>
+    <div style="width: 19.5rem; margin: 0 auto;">
+
+        <div class="drugbox">
+            <div class="drugname">
+                <div style="margin: 0.75rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="92" height="84" viewBox="0 0 92 84" fill="none">
+                        <rect x="35.9411" y="0.585786" width="26" height="50" rx="13" transform="rotate(45 35.9411 0.585786)" stroke="black" stroke-width="2"/>
+                        <rect x="45.6797" y="38.2548" width="26" height="50" rx="13" transform="rotate(-24 45.6797 38.2548)" stroke="black" stroke-width="2"/>
+                        <path d="M44.5061 10.4853C49.1924 15.1716 49.1924 22.7696 44.5061 27.4559L39.5801 32.3819L22.6095 15.4113L27.5356 10.4853C32.2218 5.79901 39.8198 5.79901 44.5061 10.4853Z" fill="#FF8888"/>
+                        <path d="M24 64C24 59.5817 27.5817 56 32 56C36.4183 56 40 59.5817 40 64H24Z" fill="#D9D9D9"/>
+                        <circle cx="32" cy="64" r="8" stroke="black" stroke-width="2"/>
+                    </svg>
+                </div>
+                <p class="drugtext">
+                    건양대학병원 / 부정맥<br>
+                    처방 의사 : 김경진<br>
+                    아침약
+                </p>
+            </div>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="290" height="2" viewBox="0 0 290 2" fill="none">
+                <path d="M1 1H289" stroke="#F5F5F5" stroke-linecap="square"/>
+            </svg>
+              
+            <div style="height: 3.5rem; display: flex; align-items: center; background-color: var(--white); flex-direction: row;">
+                <div class="alarmtimer"><p style="color: var(--red);">8:30</p></div>
+                <p class="timertext" id="a">알람까지 : ?!?@분 남았노</p>
+            </div>
+        </div>
+
+    </div>
+    <div style="width: 19.5rem; margin: 0 auto;">
+
+        <div class="drugbox">
+            <div class="drugname">
+                <div style="margin: 0.75rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="92" height="84" viewBox="0 0 92 84" fill="none">
+                        <rect x="35.9411" y="0.585786" width="26" height="50" rx="13" transform="rotate(45 35.9411 0.585786)" stroke="black" stroke-width="2"/>
+                        <rect x="45.6797" y="38.2548" width="26" height="50" rx="13" transform="rotate(-24 45.6797 38.2548)" stroke="black" stroke-width="2"/>
+                        <path d="M44.5061 10.4853C49.1924 15.1716 49.1924 22.7696 44.5061 27.4559L39.5801 32.3819L22.6095 15.4113L27.5356 10.4853C32.2218 5.79901 39.8198 5.79901 44.5061 10.4853Z" fill="#FF8888"/>
+                        <path d="M24 64C24 59.5817 27.5817 56 32 56C36.4183 56 40 59.5817 40 64H24Z" fill="#D9D9D9"/>
+                        <circle cx="32" cy="64" r="8" stroke="black" stroke-width="2"/>
+                    </svg>
+                </div>
+                <p class="drugtext">
+                    하나의원 / A형 독감<br>
+                    처방 의사 : 이혜진<br>
+                    아침약
+                </p>
+            </div>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="290" height="2" viewBox="0 0 290 2" fill="none">
+                <path d="M1 1H289" stroke="#F5F5F5" stroke-linecap="square"/>
+            </svg>
+              
+            <div style="height: 3.5rem; display: flex; align-items: center; background-color: var(--white); flex-direction: row;">
+                <div class="alarmtimer"><p style="color: var(--red);">9:30</p></div>
+                <p class="timertext" id="b">알람까지 : ?!?@분 남았노</p>
+            </div>
+        </div>
+
+    </div>
+    <div style="width: 19.5rem; margin: 0 auto;">
+
+        <div class="drugbox">
+            <div class="drugname">
+                <div style="margin: 0.75rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="92" height="84" viewBox="0 0 92 84" fill="none">
+                        <rect x="35.9411" y="0.585786" width="26" height="50" rx="13" transform="rotate(45 35.9411 0.585786)" stroke="black" stroke-width="2"/>
+                        <rect x="45.6797" y="38.2548" width="26" height="50" rx="13" transform="rotate(-24 45.6797 38.2548)" stroke="black" stroke-width="2"/>
+                        <path d="M44.5061 10.4853C49.1924 15.1716 49.1924 22.7696 44.5061 27.4559L39.5801 32.3819L22.6095 15.4113L27.5356 10.4853C32.2218 5.79901 39.8198 5.79901 44.5061 10.4853Z" fill="#FF8888"/>
+                        <path d="M24 64C24 59.5817 27.5817 56 32 56C36.4183 56 40 59.5817 40 64H24Z" fill="#D9D9D9"/>
+                        <circle cx="32" cy="64" r="8" stroke="black" stroke-width="2"/>
+                    </svg>
+                </div>
+                <p class="drugtext">
+                    안아파 이빈후과 / 비염<br>
+                    처방 의사 : 박진호<br>
+                    점심약
+                </p>
+            </div>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="290" height="2" viewBox="0 0 290 2" fill="none">
+                <path d="M1 1H289" stroke="#F5F5F5" stroke-linecap="square"/>
+            </svg>
+              
+            <div style="height: 3.5rem; display: flex; align-items: center; background-color: var(--white); flex-direction: row;">
+                <div class="alarmtimer"><p style="color: var(--red);">11:00</p></div>
+                <p class="timertext" id="c">알람까지 : ?!?@분 남았노</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function calculateTimeDifference(time1, time2) {
+            // 시간 문자열을 시와 분으로 분리
+            const [hour1, minute1] = time1.split(':').map(Number);
+            const [hour2, minute2] = time2.split(':').map(Number);
+        
+            // 각 시간을 분 단위로 변환
+            const totalMinutes1 = hour1 * 60 + minute1;
+            const totalMinutes2 = hour2 * 60 + minute2;
+            // 차이 계산
+            const differenceInMinutes = totalMinutes2 - totalMinutes1 > 0 ? totalMinutes2 - totalMinutes1 : 24*60+(totalMinutes2 - totalMinutes1);
+            // 결과 출력
+            return (`${Math.floor(differenceInMinutes / 60)}:${differenceInMinutes % 60}`);
+        }
+        let today = new Date();
+        let now = today.getHours()+':'+today.getMinutes();
+        let a_time = calculateTimeDifference(now ,'8:30');
+        let b_time = calculateTimeDifference(now ,'9:30');
+        let c_time = calculateTimeDifference(now ,'11:00');
+        document.getElementById("a").innerText = '알람까지 : ' + a_time;
+        document.getElementById("b").innerText = '알람까지 : ' + b_time;
+        document.getElementById("c").innerText = '알람까지 : ' + c_time;
+    </script>
+</body>
+</html>

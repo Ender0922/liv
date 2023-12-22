@@ -1,0 +1,76 @@
+.dieasebar {
+    width: 18rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 2.25rem;
+    background: var(--gray);
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dieasetext {
+    color: var(--black);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.025rem;
+
+    width: calc(100% - 2.3rem);
+    text-align: center;
+}
+
+.searchbutton {
+    width: 1.75rem; 
+    height: 1.75rem; 
+    border-radius: 3.5rem; 
+    background: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dangertext {
+    color: var(--line-gray);
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.callbutton {
+    width: 100%;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 2.25rem;
+    background: var(--gray);
+    border: none;
+
+    margin: 0 auto;
+}
+
+.calltext {
+    color: var(--white);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.click  {
+    background-color: var(--red);
+}
+
+footer{
+	bottom: 0px;
+	position: absolute;
+    width: 100%;
+}

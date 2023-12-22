@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>드론 호출</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/docor.css">
+    <link rel="stylesheet" href="../assets/alarm.css    ">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>   
+    
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCrFuy6g93AKQUWW_mWDI0OK_As0X386io",
+            authDomain: "oryangcompany.firebaseapp.com",
+            projectId: "oryangcompany",
+            storageBucket: "oryangcompany.appspot.com",
+            messagingSenderId: "39452497785",
+            appId: "1:39452497785:web:79ccc25b73be2f819781a8"
+        };
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <div class="headbar">
+        <div style="width: 1.5rem;"></div>
+        <div style="width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <a href="call.html">
+                <div class="headbarbutton" style="border: var(--gray) 1px solid;">
+                    <p class="text unchosed">메인</p>
+                </div>
+            </a>
+            <div style="width : calc((100% - 6rem * 3) / 2);"></div>
+            <a href="alarm.html">
+                <div class="headbarbutton" style="border: var(--gray) 1px solid;">
+                    <p class="text unchosed">약 알림</p>
+                </div>
+            </a>
+            <div style="width : calc((100% - 6rem * 3) / 2);"></div>
+            <a href="docor.html">
+                <div class="headbarbutton" style="border: var(--red) 1px solid;">
+                    <p class="text chosed">의사소견</p>
+                </div>
+            </a>
+        </div>
+        <div style="width: 1.5rem;"></div>
+    </div>
+    
+    <div style="height: 3rem;"></div>
+    <div style="width: 19.5rem; margin: 0 auto;">
+        <a href="docordetail1.html">
+        <div class="drugbox">
+            <div>
+                <div style="display: block;">
+                    <p class="doctorsaid">건양대학병원 / 부정맥</p>
+                </div>
+                <div style="height: 1rem;"></div>
+                <p class="doctortext">
+                    담배, 카페인, 술 전부 줄이시고 체중이 늘어나시면 안됩니다.<br>
+                    가벼운 유산소 운동 정도만 집에서 매일 하시면 좋습니다.<br>
+                    <br>
+                    온도에 예민한 질병이니 외부 활동은 자제해주시면 좋겠습니다.
+                </p>
+            </div>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="290" height="2" viewBox="0 0 290 2" fill="none">
+                <path d="M1 1H289" stroke="#F5F5F5" stroke-linecap="square"/>
+            </svg>
+
+            <div style="height: 3.5rem; display: flex; align-items: center; background-color: var(--white); flex-direction: row;">
+                <p class="doctoradd" style="margin: 0;">김경진</p>
+                <p class="doctoradd">2023 - 12 - 20</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div style="width: 19.5rem; margin: 0 auto;">
+        <a href="docordetail2.html">
+        <div class="drugbox">
+            <div>
+                <div style="display: block;">
+                    <br>
+                    <p class="doctorsaid">하나의원 / A형 독감</p>
+                </div>
+                <div style="height: 1rem;"></div>
+                <p class="doctortext">
+                    하루 정도는 안정 취하시고 다음날 부터는 약 지속해서 챙겨드시면 괜찮아 지실겁니다.<br>
+                    요새 날이 추우니 복장은 따뜻하게 하시고요<br>
+                    마스크는 꼭 쓰고 다니세요<br>
+                </p>
+            </div>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="290" height="2" viewBox="0 0 290 2" fill="none">
+                <path d="M1 1H289" stroke="#F5F5F5" stroke-linecap="square"/>
+            </svg>
+
+            <div style="height: 3.5rem; display: flex; align-items: center; background-color: var(--white); flex-direction: row;">
+                <p class="doctoradd" style="margin: 0;">이혜진</p>
+                <p class="doctoradd">2023 - 12 - 01</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div style="width: 19.5rem; margin: 0 auto;">
+        <a href="docordetail3.html">
+        <div class="drugbox">
+            <div>
+                <div style="display: block;">
+                    <br>
+                    <p class="doctorsaid">안아파 이빈후과 / 비염</p>
+                </div>
+                <div style="height: 1rem;"></div>
+                <p class="doctortext">
+                    따뜻한 물 평소에 많이 챙겨 드시고<br>
+                    약 꼭 다 챙겨드세요<br>
+                    증상이 완화되지 않으며 재방문 하셔서 약 다시 처방 받으세요<br>
+                </p>
+            </div>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="290" height="2" viewBox="0 0 290 2" fill="none">
+                <path d="M1 1H289" stroke="#F5F5F5" stroke-linecap="square"/>
+            </svg>
+
+            <div style="height: 3.5rem; display: flex; align-items: center; background-color: var(--white); flex-direction: row;">
+                <p class="doctoradd" style="margin: 0;">박진호</p>
+                <p class="doctoradd">2023 - 11 - 09</p>
+            </div>
+        </div>
+        </a>
+    </div>
+</body>
+</html>

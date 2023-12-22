@@ -1,0 +1,45 @@
+.drugbox {
+    width: 19.5rem;
+    height: auto;
+    border-bottom: 1px solid var(--gray);
+    background: var(--white);
+}
+
+.drugname {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.drugtext {
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 175%;
+    margin: 0.7rem 0;
+}
+
+/* ------------------------- */
+
+.alarmtimer {
+    width: 6rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    border-radius: 1.5rem;
+    border: 1px solid #F00;
+
+    text-align: center;
+}
+
+.timertext {
+    color: #555;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-left: auto;
+}

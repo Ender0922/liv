@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>드론 호출</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/call.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>   
+    
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCrFuy6g93AKQUWW_mWDI0OK_As0X386io",
+            authDomain: "oryangcompany.firebaseapp.com",
+            projectId: "oryangcompany",
+            storageBucket: "oryangcompany.appspot.com",
+            messagingSenderId: "39452497785",
+            appId: "1:39452497785:web:79ccc25b73be2f819781a8"
+        };
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <div class="headbar">
+        <div style="width: 1.5rem;"></div>
+        <div style="width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <a href="call.html">
+                <div class="headbarbutton" style="border: var(--red) 1px solid;">
+                    <p class="text chosed">메인</p>
+                </div>
+            </a>
+            <div style="width : calc((100% - 6rem * 3) / 2);"></div>
+            <a href="alarm.html">
+                <div class="headbarbutton" style="border: var(--gray) 1px solid;">
+                    <p class="text unchosed">약 알림</p>
+                </div>
+            </a>
+            <div style="width : calc((100% - 6rem * 3) / 2);"></div>
+            <a href="docor.html">
+                <div class="headbarbutton" style="border: var(--gray) 1px solid;">
+                    <p class="text unchosed">의사소견</p>
+                </div>
+            </a>
+        </div>
+        <div style="width: 1.5rem;"></div>
+    </div>
+
+    <div style="height: 3rem;"></div>
+    <div style="width: 100%;">
+        <div class="dieasebar">
+            <p class="dieasetext">AED(자동제세동기)</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div style="width: 19.5rem; margin: 0 auto;">
+            <div>
+                <p class="dangertext">아래 버튼은 실제로 드론을 호출하는 버튼이오니, 다음 상황에
+                    처할 경우에만 호출버튼을 눌러주세요.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;1. 응급환자가 발생했을 경우<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;2. 긴급재난상황이 발생했을 경우
+                    <br><br>
+                    위 사항 이외의 경우에 호출을 했을 경우 민법 ?조 ?항에 의해
+                    처벌받을 수 있습니다.</p>
+            </div>
+            <div style="height: 1.5rem;"></div>
+            <button type="button" class="callbutton" id="send">
+                <p class="calltext">호출</p>
+            </button>
+            <div style="height: 2.25rem;"></div>
+        </div>
+    </footer>
+    <script>
+        $('#send').click(function(){
+            
+        })
+    </script>
+</body>
+</html>
